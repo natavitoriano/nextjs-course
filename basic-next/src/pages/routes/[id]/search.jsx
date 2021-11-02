@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 export default function search() {
     const router = useRouter();
@@ -7,6 +8,9 @@ export default function search() {
     return (
         <div>
             <h1>Routes/ {id}/ Search!!!</h1>
+            <Link href="/routes">
+                <button>Back</button>
+            </Link>
         </div>
     )
 }
