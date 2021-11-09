@@ -9,7 +9,7 @@ export default function Name() {
     return (
         <div>
             <h1>Routes/ {id}/ {name}</h1>
-            <Link href="/routes">
+            <Link href="/routes" passHref>
                 <button>Back</button>
             </Link>
         </div>

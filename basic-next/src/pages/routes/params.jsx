@@ -11,7 +11,7 @@ export default function Params() {
     return (
         <div>
             <h1>Routes Params: {id} e {name}</h1>
-            <Link href="/routes">
+            <Link href="/routes" passHref>
                 <button>Back</button>
             </Link>
         </div>

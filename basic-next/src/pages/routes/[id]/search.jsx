@@ -9,7 +9,9 @@ export default function Search() {
         <div>
             <h1>Routes/ {id}/ Search!!!</h1>
             <Link href="/routes">
-                <button>Back</button>
+                <a>
+                    <button>Back</button>
+                </a>
             </Link>
         </div>
     )

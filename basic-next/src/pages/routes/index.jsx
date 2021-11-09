@@ -21,13 +21,13 @@ export default function Routes() {
         <div>
             <h1>Rotas Index</h1>
             <ul>
-                <Link href="/routes/params?id=12&name=Ana">
+                <Link href="/routes/params?id=12&name=Ana" passHref>
                     <li>Params</li>
                 </Link>
-                <Link href="/routes/123/search">
+                <Link href="/routes/123/search" passHref>
                     <li>Search</li>
                 </Link>
-                <Link href="/routes/123/Daniel">
+                <Link href="/routes/123/Daniel" passHref>
                     <li>Daniel</li>
                 </Link>
             </ul>
