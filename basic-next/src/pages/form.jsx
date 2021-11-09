@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export default function form() {
+export default function Form() {
     const [name, setName] = useState("");
     const [age, setAge] = useState(0);
     const [users, setUsers] = useState([]);

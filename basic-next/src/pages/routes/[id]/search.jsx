@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 
-export default function search() {
+export default function Search() {
     const router = useRouter();
     const id = router.query.id;
 
