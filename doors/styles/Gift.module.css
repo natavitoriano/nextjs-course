@@ -1,0 +1,9 @@
+.gift {
+    display: flex;
+}
+
+.cover {
+    width: 100px;
+    height: 25px;
+    background-color: #7aa944;
+}
