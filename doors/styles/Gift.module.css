@@ -1,9 +1,17 @@
 .gift {
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .cover {
     width: 100px;
     height: 25px;
     background-color: #7aa944;
+}
+
+.giftBody {
+    width: 90px;
+    height: 60px;
+    background-color: #5c7e32;
 }
