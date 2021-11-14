@@ -13,7 +13,7 @@ export default function Door(props: DoorProps){
         <div className={styles.area}>
             <div className={`${styles.frame} ${selected}`}>
                 <div className={styles.door}>
-                    <div className={styles.number}>3</div>
+                    <div className={styles.number}>{door.number}</div>
                     <div className={styles.doorknob}></div>
                 </div>
             </div>
