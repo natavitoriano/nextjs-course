@@ -1,7 +1,13 @@
 import styles from "../styles/Door.module.css";
+import DoorModel from '../model/door'
 
-export default function Door(props){
-    const selected = props.selected ? styles.selected: ''
+interface DoorProps {
+    door: DoorModel
+}
+
+export default function Door(props: DoorProps){
+    const { door } = props
+    const selected = door.selected ? styles.selected: ''
 
     return (
         <div className={styles.area}>
