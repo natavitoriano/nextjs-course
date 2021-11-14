@@ -1,10 +1,10 @@
 export default class Door {
-    #number
-    #haveGift
-    #selected
-    #open
+    #number: number
+    #haveGift: boolean
+    #selected: boolean
+    #open: boolean
 
-    constructor(number, haveGift = false, selected = false, open = false) {
+    constructor(number: number, haveGift = false, selected = false, open = false) {
         this.#number = number
         this.#haveGift = haveGift
         this.#selected = selected
