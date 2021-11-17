@@ -12,16 +12,21 @@ export default function Door(props: DoorProps){
 
     const toggleSelection = e => props.onChange(door.toggleSelection())
 
-    return (
-        <div className={styles.area} onClick={toggleSelection}>
+    function renderDoor() {
+        return (
             <div className={`${styles.frame} ${selected}`}>
                 <div className={styles.door}>
                     <div className={styles.number}>{door.number}</div>
                     <div className={styles.doorknob}></div>
                 </div>
             </div>
-            <div className={styles.floor}>
+        )
+    }
 
+    return (
+        <div className={styles.area} onClick={toggleSelection}>
+            {door.open ? false : renderDoor()}
+            <div className={styles.floor}>
             </div>
         </div>
     )
