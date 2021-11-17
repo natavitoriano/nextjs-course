@@ -8,7 +8,7 @@ interface DoorProps {
 
 export default function Door(props: DoorProps){
     const door  = props.value
-    const selected = door.selected ? styles.selected: ''
+    const selected = door.selected && !door.open ? styles.selected: ''
 
     const toggleSelection = e => props.onChange(door.toggleSelection())
     const ope = e => {
