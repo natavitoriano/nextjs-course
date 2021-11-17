@@ -37,7 +37,7 @@ export default class DoorModel {
         return new DoorModel(this.number, this.haveGift, selected, this.open)
     }
 
-    opernDoor() {
+    openDoor() {
         const open = true;
         return new DoorModel(this.number, this.haveGift, this.selected, open)
     }
