@@ -20,7 +20,7 @@ export default function Door(props: DoorProps){
         return (
             
             <div className={styles.door}>
-                <div className={styles.number}>{door.number}</div>
+                <div className={styles.number}>{door.num}</div>
                 <div className={styles.doorknob}
                     onClick={ope}></div>
             </div>

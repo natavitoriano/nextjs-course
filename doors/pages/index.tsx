@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Door from "../components/Door";
-import { createDoors } from "../functions/doors";
+import { createDoors, updateDoors } from "../functions/doors";
 import DoorModel from "../model/door";
 
 export default function Home() {
@@ -8,7 +8,8 @@ export default function Home() {
 
   function renderDoors() {
     return doors.map(door => {
-      return <Door key={door.number} value={door} onChange={console.log}/>
+      return <Door key={door.num} value={door} 
+        onChange={newDoor => setDoors(updateDoors(doors, newDoor))}/>
     })
   }
 
