@@ -15,7 +15,7 @@ export function updateDoors(doors: DoorModel[], modified: DoorModel): DoorModel[
         if(equalToModified) {
             return modified
         } else {
-            return currentDoor
+            return currentDoor.deselect()
         }
     })
 }
