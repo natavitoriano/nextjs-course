@@ -1,7 +1,7 @@
-import styles from "../styles/Game.module.css";
-import Door from "../components/Door";
+import styles from "../../../styles/Game.module.css";
+import Door from "../../../components/Door";
 import { useState } from "react";
-import { createDoors, updateDoors } from "../functions/doors";
+import { createDoors, updateDoors } from "../../../functions/doors";
 import Link from "next/link";
 
 export default function game() {
