@@ -4,7 +4,14 @@ import styles from "../styles/Form.module.css";
 export default function Form() {
   return (
     <div className={styles.form}>
-      <Card />
+      <div>
+        <Card bgcolor="#c0392c"></Card>
+        <Card></Card>
+      </div>
+      <div>
+        <Card></Card>
+        <Card bgcolor="#28a085"></Card>
+      </div>
     </div>
   )
 }

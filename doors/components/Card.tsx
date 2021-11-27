@@ -1,6 +1,10 @@
 import styles from "../styles/Card.module.css";
 
-export default function Card(props) {
+interface CardProps {
+    bgcolor?: string
+}
+
+export default function Card(props: CardProps) {
     return (
         <div className={styles.card}
             style={{
