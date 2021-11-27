@@ -2,6 +2,7 @@ import styles from "../styles/Card.module.css";
 
 interface CardProps {
     bgcolor?: string
+    children?: any
 }
 
 export default function Card(props: CardProps) {
@@ -11,7 +12,7 @@ export default function Card(props: CardProps) {
                 backgroundColor: props.bgcolor?? "#fff"
             }}
             >
-            Cartão
+            {props.children}
         </div>
     )
 }
