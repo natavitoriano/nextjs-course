@@ -1,8 +1,9 @@
 import Card from "../components/Card";
+import styles from "../styles/Form.module.css";
 
-export default function Home() {
+export default function Form() {
   return (
-    <div>
+    <div className={styles.form}>
       <Card />
     </div>
   )
