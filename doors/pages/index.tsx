@@ -6,6 +6,7 @@ import { useState } from "react";
 
 export default function Form() {
   const [numberDoors, setNumberDoors] = useState(3);
+  const [withGift, setWithGift] = useState(1);
 
   return (
     <div className={styles.form}>
@@ -19,9 +20,12 @@ export default function Form() {
         </Card>
       </div>
       <div>
-        <Card></Card>
+        <Card>
+        <NumberInput text="Porta com Presente?" 
+            value={withGift} onChange={newGiftDoor => setWithGift(newGiftDoor)} />
+        </Card>
         <Card bgcolor="#28a085">
-          <Link href={`/game/4/2`}>
+          <Link href={`/game/${numberDoors}/${withGift}`}>
             <h2 className={styles.link}>Iniciar</h2>
           </Link>
         </Card>
