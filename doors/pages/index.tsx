@@ -1,7 +1,7 @@
 import Card from "../components/Card";
 import styles from "../styles/Form.module.css";
 import Link from "next/link";
-import NumberInput from "../components/numberInput";
+import NumberInput from "../components/NumberInput";
 import { useState } from "react";
 
 export default function Form() {
